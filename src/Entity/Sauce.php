@@ -18,13 +18,13 @@ class Sauce
     public function getId(): ?int{
         return $this->id;
     }
-    public function setId(?int $id): ?int{
-        return $this->id = $id;
+    public function setId(?int $id){
+        $this->id = $id;
     }
     public function getNom(): ?string{
         return $this->nom;
     }
-    public function setNom(?string $nom): ?string{
-        return $this->nom = $nom;
+    public function setNom(?string $nom){
+        $this->nom = $nom;
     }
 }
