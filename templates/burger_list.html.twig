@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	{{ parent()}}
+	| Burger List
+{% endblock %}
+{% block body%}
+	{{parent()}}
+	<a href="{{path("app_home")}}">Retour page Home</a>
+
+{% endblock %}
