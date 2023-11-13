@@ -3,6 +3,8 @@
 	{{parent()}}
 	| Home
 {% endblock %}
+{% block navbar %}{% endblock %}
+
 {% block body %}
-	<img src={{ asset("burger.jpg", 'imgs')}} alt="crabby patty image">
+	<a href="{{path("app_burger_list")}}">Voir la liste des burgers</a>
 {% endblock %}
