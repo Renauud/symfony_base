@@ -4,7 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-class Pain{
+class Oignon{
 
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -13,4 +13,7 @@ class Pain{
 
     #[ORM\Column]
     private ?string $name = null;
+
+    #[ORM\ManyToOne(targetEntity: Burger::class, inversedBy:"oignon")]
+    private ?Burger $burger = null;
 }

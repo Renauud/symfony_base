@@ -15,6 +15,9 @@ class Sauce
     #[ORM\Column(length:255)]
     private ?string $nom = null;
 
+    #[ORM\ManyToOne(targetEntity: Burger::class, inversedBy:"sauce")] // ?
+    private ?Burger $burger = null;
+
     public function getId(): ?int{
         return $this->id;
     }
