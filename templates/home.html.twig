@@ -6,5 +6,7 @@
 {% block navbar %}{% endblock %}
 
 {% block body %}
+	{{parent()}}
+	<br>
 	<a href="{{path("app_burger_list")}}">Voir la liste des burgers</a>
 {% endblock %}
