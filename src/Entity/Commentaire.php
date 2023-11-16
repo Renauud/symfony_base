@@ -18,16 +18,18 @@ class Commentaire{
     // #[ORM\OneToOne(targetEntity:Burger::class, inversedBy:"commentaire")]
     // private ?Burger $burger = null;
 
-    public function getId(): ?int{
+    public function getId(): int{
         return $this->id;
     }
+
     public function setId(int $id){
         $this->id = $id;
     }
-    public function getCommentaire(): ?string{
+    public function getCommentaire(): string{
         return $this->commentaire;
     }
-    public function setCommentaire(?string $commentaire){
+
+    public function setCommentaire(string $commentaire){
         $this->commentaire = $commentaire;
     }
 }

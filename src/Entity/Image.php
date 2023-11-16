@@ -18,23 +18,23 @@ class Image
     #[ORM\Column(length: 255)]
     private ?string $altText = null;
 
-    public function getId(): ?int{
+    public function getId(): int{
         return $this->id;
     }
-    public function setId(?int $id){
+    public function setId(int $id){
         $this->id = $id;
     }
 
-    public function getUrl(): ?string{
+    public function getUrl(): string{
         return $this->url;
     }
-    public function setUrl(?string $url){
+    public function setUrl(string $url){
         $this->url = $url;
     }
-    public function getAltText(): ?string{
+    public function getAltText(): string{
         return $this->altText;
     }
-    public function setAltText(?string $altText){
+    public function setAltText(string $altText){
         $this->altText = $altText;
     }
 }

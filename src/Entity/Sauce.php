@@ -18,16 +18,16 @@ class Sauce
     #[ORM\ManyToOne(targetEntity: Burger::class, inversedBy:"sauce")] // ?
     private ?Burger $burger = null;
 
-    public function getId(): ?int{
+    public function getId(): int{
         return $this->id;
     }
-    public function setId(?int $id){
+    public function setId(int $id){
         $this->id = $id;
     }
-    public function getNom(): ?string{
+    public function getNom(): string{
         return $this->nom;
     }
-    public function setNom(?string $nom){
+    public function setNom(string $nom){
         $this->nom = $nom;
     }
 }

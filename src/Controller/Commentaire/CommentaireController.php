@@ -9,7 +9,8 @@ class CommentaireController extends AbstractController{
 
     #[Route("/commentaire", name:"app_commentaire")]
 
-    public function commentaire(int $id){
+    public function allCommentaire(array $commentaires){
+        
         return $this->render("", []);
     }
 }
