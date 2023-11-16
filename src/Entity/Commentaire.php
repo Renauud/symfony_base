@@ -25,6 +25,7 @@ class Commentaire{
     public function setId(int $id){
         $this->id = $id;
     }
+    
     public function getCommentaire(): string{
         return $this->commentaire;
     }

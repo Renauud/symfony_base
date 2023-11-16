@@ -1,9 +1,14 @@
 {% extends 'base.html.twig' %}
 {% block title %}
 	{{ parent()}}
-	| Burger List
+	| Commentaire Liste
 {% endblock %}
 {% block body%}
-	{{parent()}}
 	<a href="{{path("app_home")}}">Retour page Home</a>
+	<h1>Liste des commentaires</h1>
+
+	{# {% for sauce in sauces %}
+	{ <strong> {{  }} </strong> }
+	{% endfor %#}
+
 {% endblock %}

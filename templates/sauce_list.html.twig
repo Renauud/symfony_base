@@ -1,9 +1,14 @@
 {% extends 'base.html.twig' %}
 {% block title %}
 	{{ parent()}}
-	| Burger List
+	| Sauce Liste
 {% endblock %}
 {% block body%}
-	{{parent()}}
 	<a href="{{path("app_home")}}">Retour page Home</a>
+	<h1>Liste des sauces</h1>
+
+	{# {% for sauce in sauces %}
+	{ <strong> {{  }} </strong> }
+	{% endfor %#}
+
 {% endblock %}

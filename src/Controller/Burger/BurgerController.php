@@ -10,7 +10,8 @@ class BurgerController extends AbstractController
     #[Route('/burger_list', name: 'app_burger_list')]
     public function listAll()
     {
-        return $this->render('burger_list.html.twig', ["aze"]);
-        // dd('liste des burgers');
+        return $this->render('burger_list.html.twig', [
+            ''=> '',
+        ]);
     }
 }
