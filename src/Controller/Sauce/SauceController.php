@@ -15,9 +15,9 @@ class SauceController extends AbstractController{
         return $this->render('sauce_list.html.twig', []);
     }
 
-    public function createSauce(EntityManagerInterface $entityManager): Response{
+    public function createSauce(EntityManagerInterface $entityManager, string $name): Response{
         $sauce = new Sauce();
-        $sauce->setName('Andalouse');
+        $sauce->setName($name);
 
         $entityManager->persist($sauce);
 
@@ -26,11 +26,11 @@ class SauceController extends AbstractController{
         return new Response('Saved new sauce with id' . $sauce->getId());
     }
 
-    public function listAll(EntityManagerInterface $entityManager, int $id){
+    public function show(EntityManagerInterface $entityManager, int $id){ // faire la fonction et modifier la classe ens uviant la doc
         
-        foreach ($sauces as $key => $value) {
-            $sauces = $entityManager->getRepository(Sauce::class)->find($id);
-        }
+        // foreach ($sauces as $key => $value) {
+        //     $sauces = $entityManager->getRepository(Sauce::class)->find($id);
+        // }
 
         // return new Response();
     }
