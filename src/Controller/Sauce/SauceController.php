@@ -3,6 +3,7 @@
 namespace App\Controller\Sauce;
 
 use App\Entity\Sauce;
+<<<<<<< HEAD
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -33,5 +34,22 @@ class SauceController extends AbstractController{
         }
 
         // return new Response();
+=======
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\EntityManagerInterface;
+
+
+class SauceController extends AbstractController{
+    #[Route('/sauce_list', name: 'app_sauce_list')]
+    public function listAll(EntityManagerInterface $entityManager, int $id): Response{
+
+        // $sauce = $entityManager->getRepository(Sauce::class)->find($id);
+
+        return $this->render('sauce_list.html.twig',[
+            ''=> '',
+        ]);
+>>>>>>> 2437df8dc7ec688f470f8468d763a91daa21b088
     }
 }

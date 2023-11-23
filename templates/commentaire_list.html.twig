@@ -1,6 +1,21 @@
 {% extends 'base.html.twig' %}
+<<<<<<< HEAD
 {% block body %}
 	Liste de commentaires
 	<br>
 	<a href="{{path("app_home")}}">Retour Home</a>
+=======
+{% block title %}
+	{{ parent()}}
+	| Commentaire Liste
+{% endblock %}
+{% block body%}
+	<a href="{{path("app_home")}}">Retour page Home</a>
+	<h1>Liste des commentaires</h1>
+
+	{# {% for sauce in sauces %}
+	{ <strong> {{  }} </strong> }
+	{% endfor %#}
+
+>>>>>>> 2437df8dc7ec688f470f8468d763a91daa21b088
 {% endblock %}

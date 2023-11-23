@@ -29,22 +29,22 @@ class Burger{
     #[ORM\OneToOne(cascade:["persist","remove"])]
     private ?Commentaire $commentaire = null;
 
-    public function getId(): ?int{
+    public function getId(): int{
         return $this->id;
     }
-    public function setId(?int $id){
+    public function setId(int $id){
         $this->id = $id;
     }
-    public function getName(): ?string{
+    public function getName(): string{
         return $this->name;
     }
-    public function setName(?string $name): void{
+    public function setName(string $name): void{
     $this->name = $name;
     }
-    public function getImage(): ?Image  {
+    public function getImage(): Image  {
         return $this->image;
     }
-    public function setImage(?Image $image): void{
+    public function setImage(Image $image): void{
         $this->image = $image;
     }
 }
