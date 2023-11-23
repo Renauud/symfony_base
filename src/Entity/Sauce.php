@@ -24,10 +24,10 @@ class Sauce
     public function setId(?int $id){
         $this->id = $id;
     }
-    public function getNom(): ?string{
+    public function getName(): ?string{
         return $this->nom;
     }
-    public function setNom(?string $nom){
+    public function setName(?string $nom){
         $this->nom = $nom;
     }
 }

@@ -6,10 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 class CommentaireController extends AbstractController{
+    #[Route("/commentaire_list", name:"commentaires")]
 
-    #[Route("/commentaire", name:"app_commentaire")]
-
-    public function commentaire(int $id){
-        return $this->render("", []);
+    public function commentaire(){
+        return $this->render("commentaire_list.html.twig", []);
     }
 }

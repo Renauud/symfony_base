@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BurgerController extends AbstractController
 {
     #[Route('/burger_list', name: 'app_burger_list')]
-    public function listAll()
+    public function burgerRenderer()
     {
         return $this->render('burger_list.html.twig', ["aze"]);
         // dd('liste des burgers');

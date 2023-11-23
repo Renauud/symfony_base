@@ -7,9 +7,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class ImageController extends AbstractController{
 
-    #[Route("/image", name:"app_image")]
+    #[Route("/image_list", name:"images")]
 
-    public function image(int $id){
-        return $this->render("", []);
+    public function image(){
+        return $this->render("image_list.html.twig", []);
     }
 }
